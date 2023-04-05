@@ -1,0 +1,86 @@
+#game {
+  margin: 0;
+  overflow: hidden;
+}
+#paddle1 {
+  position: absolute;
+  bottom: 0;
+  width: 10%;
+  height: 200px;
+  background-color: blue;
+}
+#paddle2 {
+  position: absolute;
+  top: 0;
+  width: 10%;
+  height: 200px;
+  background-color: red;
+}
+#ball {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: green;
+}
+
+#paddle1 {
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+
+#paddle2 {
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+
+#ball {
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+
+#paddle1 {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#paddle2 {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#ball {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#paddle1:hover {
+  -webkit-transform: translateY(-10px);
+  transform: translateY(-10px);
+}
+
+#paddle2:hover {
+  -webkit-transform: translateY(10px);
+  transform: translateY(10px);
+}
+
+#ball {
+  -webkit-animation: move 1s infinite linear;
+  animation: move 1s infinite linear;
+}
+
+@keyframes move {
+  0% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+
+  50% {
+    -webkit-transform: translate(100px, 0);
+    transform: translate(100px, 0);
+  }
+
+  100% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+}
