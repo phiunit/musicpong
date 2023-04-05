@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pong Game</title>
+<style>
+body {
+  margin: 0;
+  overflow: hidden;
+}
+#game {
+  width: 100%;
+  height: 100%;
+}
+#paddle1 {
+  position: absolute;
+  bottom: 0;
+  width: 10%;
+  height: 200px;
+  background-color: blue;
+}
+#paddle2 {
+  position: absolute;
+  top: 0;
+  width: 10%;
+  height: 200px;
+  background-color: red;
+}
+#ball {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: green;
+}
+</style>
+</head>
+<body>
+<div id="game">
+  <div id="paddle1"></div>
+  <div id="paddle2"></div>
+  <div id="ball"></div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
